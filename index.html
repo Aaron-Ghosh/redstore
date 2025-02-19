@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en,nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      var timeleft = 3;
+      var downloadTimer = setInterval(function () {
+        if (timeleft <= 0) {
+          clearInterval(downloadTimer);
+          document.getElementById("countdown").innerHTML = "Finished loading";
+        } else {
+          document.getElementById("countdown").innerHTML =
+            timeleft + " seconds remaining";
+        }
+        timeleft -= 1;
+      }, 1000);
+    </script>
+    <link rel="stylesheet" href="style3.css" />
+    <title>Documen</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="logo.png" alt="logo-img" />
+          </div>
+          <div id="nav-container">
+            <nav>
+              <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">products</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">account</a></li>
+                <li>
+                  <a href="#cart"
+                    ><img src="images\cart\cart.png" alt="cool"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#products"
+                    ><img src="images\cart\products.png" alt="cool"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="row hero-section">
+        <div class="col-2">
+          <img src="images/soccer.png" alt="soccer-banner" />
+        </div>
+        <div class="col-2">
+          
+          <div id="countdown"></div>
+          <h1>give your workout a new style!!!</h1>
+          <p>
+            Success isn't always about greatness. Its about consistency.
+            Consistent <br />hard work gains success. Greatness will come.
+          </p>
+          <a href="#" class="btn">Explore</a>
+        </div>
+      </div>
+    </div>
+    <div class="categories">
+      <div class="small-container">
+        <h2 class="section-title">Featured Categories</h2>
+        <div class="row">
+          <div class="col-3">
+            <a href="images/featured cat/">
+              <div class="img-container">
+                <img
+                  src="images/featured cat/featured products/soccer cleats.png "
+                  alt="Soccer Cleats"
+                />
+                <div class="category-info">
+                  <h3>Soccer Cleats</h3>
+                  <p class="price">$60.99</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="images/featured cat/featured products/Goal gloaves.png">
+              <div class="img-container">
+                <img
+                  src="images/featured cat/featured products/Goal gloaves.png"
+                  alt="Goal Gloves"
+                />
+                <div class="category-info">
+                  <h3>Goal Gloves</h3>
+                  <p class="price">$30.99</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="images/featured cat/featured products/shirt.png">
+              <div class="img-container">
+                <img
+                  src="images/featured cat/featured products/shirt.png"
+                  alt="Sports Shirt"
+                />
+                <div class="category-info">
+                  <h3>Sports Shirt</h3>
+                  <p class="price">$30.99</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="featured-products">
+      <div class="small-container">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1" checked />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+
+            <div class="slide first">
+              <div class="slide-content">
+                <img
+                  src="images/featured cat/featured catagories/pand shirt atheletic men clothes.png"
+                  alt="Athletic Wear"
+                />
+                <div class="slide-text">
+                  <h3>Athletic Wear Set</h3>
+                  <p class="price">$26.99</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slide-content">
+                <img
+                  src="images/featured cat/featured catagories/basketball gameball.png"
+                  alt="Basketball"
+                />
+                <div class="slide-text">
+                  <h3>Pro Basketball</h3>
+                  <p class="price">$38.99</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slide-content">
+                <img
+                  src="images/featured cat/featured catagories/tennis racket.png"
+                  alt="Tennis Racket"
+                />
+                <div class="slide-text">
+                  <h3>Tennis Racket</h3>
+                  <p class="price">$30.99</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+            </div>
+          </div>
+
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="featured_">
+      <h2 class="title">Featured products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img
+            src="images/featured cat/featured products/product1.png"
+            alt="featured-products"
+          />
+          <h4>running shoes</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+          <p>29.99$</p>
+        </div>
+        <div class="col-4">
+          <img
+            src="images/featured cat/featured products/product2.png"
+            alt="featured-products"
+          />
+          <h4>swimming tubes</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+          <p>10.99$</p>
+        </div>
+        <div class="col-4">
+          <img
+            src="images/featured cat/featured products/product3.png"
+            alt="featured-products"
+          />
+          <h4>leather gloves</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+          <p>60.99$</p>
+        </div>
+        <div class="col-4">
+          <img
+            src="images/featured cat/featured products/product4.png"
+            alt="featured-products"
+          />
+          <h4>tennis ball</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+          <p>10.99$</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img
+            src="images/featured cat/featured products/r2-pro1.jpg"
+            alt="featured-products"
+          />
+          <h4>Nike jersey</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+          <p>230.99$</p>
+        </div>
+        <div class="col-4">
+          <img
+            src="images/featured cat/featured products/r2-pro3.jpg"
+            alt="featured-products"
+          />
+          <h4>fighter jersey</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+          <p>70.99$</p>
+        </div>
+        <div class="col-4">
+          <img
+            src="images/featured cat/featured products/r2-pro4.jpg"
+            alt="featured-products"
+          />
+          <h4>atheletics wear</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+          <p>80.99$</p>
+        </div>
+        <div class="col-4">
+          <img
+            src="images/featured cat/featured products/r2-pro2.jpg"
+            alt="featured-products"
+          />
+          <h4>cargo shorts</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+          <p>49.99</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2 class="title">Latest products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img
+            src="images/featured cat/latest/pro1.jpg"
+            alt="featured-products"
+          />
+          <h4>stript foam</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+        </div>
+        <div class="col-4">
+          <img
+            src="images/featured cat/latest/pro2.jpg"
+            alt="featured-products"
+          />
+          <h4>elastic band exersise</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+        </div>
+        <div class="col-4">
+          <img
+            src="images/featured cat/latest/pro3.jpg"
+            alt="featured-products"
+          />
+          <h4>helmet</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+        </div>
+        <div class="col-4">
+          <img
+            src="images/featured cat/latest/pro4.jpg"
+            alt="featured-products"
+          />
+          <h4>ankel safety strap</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img
+            src="images/featured cat/latest/r2-pro1.jpg"
+            alt="featured-products"
+          />
+          <h4>gym equipment</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+        </div>
+        <div class="col-4">
+          <img
+            src="images/featured cat/latest/r2-pro2.jpg"
+            alt="featured-products"
+          />
+          <h4>hoodie</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+        </div>
+        <div class="col-4">
+          <img
+            src="images/featured cat/latest/r2-pro3.jpg"
+            alt="featured-products"
+          />
+          <h4>glasses</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+        </div>
+        <div class="col-4">
+          <img
+            src="images/featured cat/latest/r2-pro4.jpg"
+            alt="featured-products"
+          />
+          <h4>swmming concept wear</h4>
+          <div class="ratings">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img
+              src="images/offer/offer.png"
+              alt="smart watch"
+              class="offer-img"
+            />
+          </div>
+          <div class="col-2">
+            <p>Exclusively available on our website</p>
+            <h1>Smartband 4</h1>
+            <small>
+              The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3)
+              AMOLED color full-touch display with adjustible brightness, so
+              everything is clear as can be.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials-section">
+      <div class="small-container">
+        <h2 class="testimonials-heading">
+          What Professional Athletes Say About Us
+        </h2>
+        <div class="row testimonials-container">
+          <div class="col-3">
+            <img
+              src="images\about us\image.jpg"
+              class="img-about"
+              alt="Cristiano Ronaldo"
+            />
+            <div class="ratings">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <p class="reveiw">
+              I recently discovered RedStore, and it has quickly become my go-to
+              online shopping destination. From the user-friendly website to the
+              exceptional product range, RedStore offers a shopping experience
+              that is second to none.
+            </p>
+          </div>
+          <div class="col-3">
+            <img
+              src="images\about us\messi lionel.png"
+              class="img-about"
+              alt="Lionel Messi"
+            />
+            <div class="ratings">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <p class="reveiw">
+              I recently discovered RedStore, and it has quickly become my go-to
+              online shopping destination. From the user-friendly website to the
+              exceptional product range, RedStore offers a shopping experience
+              that is second to none.
+            </p>
+          </div>
+          <div class="col-3">
+            <img
+              src="images\about us\garnacho.png"
+              class="img-about"
+              alt="Alejandro Garnacho"
+            />
+            <div class="ratings">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <p class="reveiw">
+              I recently discovered RedStore, and it has quickly become my go-to
+              online shopping destination. From the user-friendly website to the
+              exceptional product range, RedStore offers a shopping experience
+              that is second to none.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <form class="cta-form" name="sign-up">
+          <div>
+            <label for="full-name">Full Name</label>
+            <input
+              id="full-name"
+              type="number"
+              placeholder="John Smith"
+              name="full-name"
+              required=""
+            />
+          </div>
+
+          <div>
+            <label for="email">Email address</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="me@example.com"
+              name="email"
+              required=""
+            />
+          </div>
+
+          <div>
+            <label for="select-where">Where did you hear from us?</label>
+            <select id="select-where" name="select-where" required="">
+              <option value="">Please choose one option:</option>
+              <option value="friends">Friends and family</option>
+              <option value="youtube">YouTube video</option>
+              <option value="podcast">Podcast</option>
+              <option value="ad">Facebook ad</option>
+              <option value="others">Others</option>
+              <option value="test">test</option>
+            </select>
+          </div>
+
+          <button class="btn btn--form">Sign up now</button>
+
+          
+            
+        </form> -->
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and Ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="images/applogo/play-store.png" />
+              <img src="images/applogo/app-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="logo.png" alt="logo-img" />
+<p>
+              Our purpose is to sustainably make the pleasure and benefits of
+              Sports Accessible to Many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>    
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright"> Aaron Ghosh</p>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.about {
+    background-image:url(images/banner-about.jpg);
+    background-size:cover;
+    width:100%;
+    padding:100px;
+    height:80vh;
+    color:aliceblue;
+}
+
+.about p {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+
+}
+
+.about-content {
+   background-color:rgba(0, 0, 0,0.8);
+   padding: 24px;
+   border-radius:20px;
+}
